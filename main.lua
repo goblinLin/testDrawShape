@@ -2,7 +2,7 @@
 --	這個範例展示如何使用Geometric Shapes相關的API，更多display相關API請參考以下網址
 --  https://docs.coronalabs.com/api/library/display/index.html
 --	Author: Zack Lin
---	Time: 2015/3/12
+--	Time: 2016/2/16
 -----------------------------------------------------------------------------------------
 
 --畫一條線，從座標100,100到200,0
@@ -30,19 +30,19 @@ local rect = display.newRect(  220, 230 , 50, 70 )
 rect.anchorX = 0
 rect.anchorY = 0
 rect.strokeWidth = 3
-rect:setFillColor( 0 , 255 , 0 )
-rect:setStrokeColor( 255 , 255 , 255 )
+rect:setFillColor( 0 , 1 , 0 )
+rect:setStrokeColor( 1 , 1 , 1 )
 
 --劃一個圓角長方形，中心點為120,120，寬度為150，高度為50，圓角角度為18
 local roundedRect = display.newRoundedRect( 120 , 120 , 150 , 50 , 18 )
 roundedRect.anchorX = 0
 roundedRect.anchorY = 0
 roundedRect.strokeWidth = 3
-roundedRect:setFillColor( 0 , 0 ,255 )
-roundedRect:setStrokeColor(  255 , 255 , 255 )
+roundedRect:setFillColor( 0 , 0 ,1 )
+roundedRect:setStrokeColor(  1 , 1 , 1 )
 
 --劃一個圓形，中心點為150,250，半徑為30
 local circle = display.newCircle( 150 , 250 , 30 )
 circle.strokeWidth = 3
-circle:setFillColor( 0 , 128 , 200 )
-circle:setStrokeColor( 140 , 200 , 100 )
+circle:setFillColor( 0 , 128/255 , 200/255 )
+circle:setStrokeColor( 140/255 , 200/255 , 100/255 )
