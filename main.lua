@@ -46,3 +46,16 @@ local circle = display.newCircle( 150 , 250 , 30 )
 circle.strokeWidth = 3
 circle:setFillColor( 0 , 128/255 , 200/255 )
 circle:setStrokeColor( 140/255 , 200/255 , 100/255 )
+
+
+local poly_x = display.contentWidth * 0.5
+local poly_y = display.contentHeight * 0.8
+
+local vertices = { 0,-110, 27,-35, 105,-35, 43,16, 65,90, 0,45, -65,90, -43,15, -105,-35, -27,-35, }
+
+--繪製多邊形
+local o = display.newPolygon( poly_x, poly_y, vertices )
+--在中間填入圖片
+o.fill = { type="image", filename="goblin.png" }
+o.strokeWidth = 10
+o:setStrokeColor( 1, 1, 1 )
